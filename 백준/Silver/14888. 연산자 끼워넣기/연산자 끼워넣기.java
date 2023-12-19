@@ -44,14 +44,12 @@ public class Main {
         }
         for (int i = 0; i < operators.length; i++) {
              if (operators[i] > 0){
-                --operators[i];
                 switch (i) {
                     case 0: recursive(num + numArr[index], index + 1); break;
                     case 1: recursive(num - numArr[index], index + 1); break;
                     case 2: recursive(num * numArr[index], index + 1); break;
                     case 3: recursive(num / numArr[index], index + 1); break;
                 }
-                ++operators[i];
             }
         }
     }
