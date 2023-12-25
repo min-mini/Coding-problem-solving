@@ -18,9 +18,6 @@ class Solution {
                 count++;
             }
         }
-
-        System.out.println(count);
-        System.out.println(resultNums);
         return count;
     }
 
